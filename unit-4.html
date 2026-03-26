@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrandBoost | Social Media + Video & Audio Marketing</title>
+
+<style>
+:root {
+    --bg: #0f172a;
+    --dark: #020617;
+    --primary: #38bdf8;
+    --accent:#22d3ee;
+    --text: #e5e7eb;
+    --muted: #cbd5f5;
+    --card: #1e293b;
+    --ink: #020617;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI, Arial;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: rgba(2, 6, 23, .9);
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    color: var(--primary);
+}
+
+/* NAV */
+nav a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 16px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background: var(--primary);
+    color: #020617;
+}
+
+/* HERO */
+.hero, .media-hero {
+    background: linear-gradient(135deg, #020617, #0f172a);
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h2, .media-hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p, .media-hero p {
+    max-width: 800px;
+    margin: auto;
+    color: var(--muted);
+    font-size: 18px;
+}
+
+/* SECTION */
+section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: var(--primary);
+}
+
+/* CARDS */
+.cards, .media-split, .promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* CARD STYLE */
+.card, .media-box, .promo-box {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+.card:hover, .media-box:hover, .promo-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.card h4, .media-box h3, .promo-box h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+/* BLOG */
+.blog {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.blog h4 {
+    color: var(--primary);
+}
+
+/* MEDIA */
+video, audio {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* IMPACT */
+.media-impact {
+    background: #020617;
+    text-align: center;
+}
+
+.impact-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.impact-cards div {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: var(--primary);
+    color: #020617;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>BrandBoost</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <!-- <a href="#">Social Media</a>
+    <a href="#">Video & Audio</a>
+    <a href="#">Blog</a> -->
+  </nav>
+</header>
+
+<!-- SOCIAL MEDIA HERO -->
+<section class="hero">
+  <h2>Social Media Marketing (Unit IV)</h2>
+  <p>Strategic Brand Promotion using Social Media, Video & Audio Marketing</p>
+</section>
+
+<!-- SOCIAL MEDIA PLATFORMS -->
+<section>
+  <h3 class="section-title">Social Media Platforms Used</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>Instagram</h4>
+      <p>Reels, stories, influencer campaigns & visual storytelling.</p>
+    </div>
+    <div class="card">
+      <h4>Facebook</h4>
+      <p>Paid ads, brand communities & lead generation campaigns.</p>
+    </div>
+    <div class="card">
+      <h4>LinkedIn</h4>
+      <p>Professional branding & B2B marketing.</p>
+    </div>
+    <div class="card">
+      <h4>YouTube</h4>
+      <p>Product demos, tutorials & awareness campaigns.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG SECTION -->
+<section>
+  <h3 class="section-title">Blogging Section</h3>
+  <div class="blog">
+    <article>
+      <h4>How Social Media Boosts Brand Promotion</h4>
+      <p>Targeted posting increases brand visibility and engagement.</p>
+    </article>
+    <article>
+      <h4>Top 5 Video Marketing Strategies</h4>
+      <p>Video content improves trust and conversion rates.</p>
+    </article>
+  </div>
+</section>
+
+<!-- VIDEO & AUDIO HERO -->
+<section class="media-hero">
+    <h2>Engage Audience with Video & Audio 🎬🎧</h2>
+    <p>Story-driven video ads & powerful audio branding</p>
+</section>
+
+<!-- VIDEO & AUDIO SERVICES -->
+<section>
+  <h3 class="section-title">Video & Audio Marketing Services</h3>
+  <div class="media-split">
+
+    <div class="media-box">
+        <h3>Video Marketing</h3>
+        <ul>
+            <li>✔ YouTube & Reels Ads</li>
+            <li>✔ Brand Storytelling</li>
+            <li>✔ Product Explainer Videos</li>
+        </ul>
+    </div>
+
+    <div class="media-box">
+        <h3>Audio Marketing</h3>
+        <ul>
+            <li>✔ Podcast Sponsorship</li>
+            <li>✔ Voice Ads</li>
+            <li>✔ Audio Branding</li>
+        </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- BRAND PROMOTION SHOWCASE -->
+<section>
+    <h3 class="section-title">Brand Promotion Showcase</h3>
+
+    <div class="promo-grid">
+
+        <div class="promo-box">
+            <h3>🔥 Video Promotion</h3>
+            <video controls>
+                <source src="VD.mp4" type="video/mp4">
+            </video>
+            <p>Cinematic storytelling video for strong brand identity.</p>
+        </div>
+
+        <div class="promo-box">
+            <h3>🎧 Audio Promotion</h3>
+            <audio controls>
+                <source src="AUD-20260326-WA0005.mp3" type="audio/mp3">
+            </audio>
+            <p>Audio branding used in podcasts and digital ads.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- WHY MEDIA WORKS -->
+<section class="media-impact">
+    <h2>Why Media Marketing Works 🚀</h2>
+    <div class="impact-cards">
+        <div>Higher Engagement</div>
+        <div>Strong Brand Recall</div>
+        <div>Emotional Connection</div>
+    </div>
+</section>
+
+<footer>
+  © 2026 BrandBoost | Social Media + Video & Audio Marketing
+</footer>
+
+</body>
+</html>

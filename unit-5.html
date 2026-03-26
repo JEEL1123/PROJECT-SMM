@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Digital Marketing Strategy | Visual Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+    --bg:#0f172a;
+    --dark:#020617;
+    --primary:#38bdf8;
+    --text:#e5e7eb;
+    --card:#1e293b;
+    --card-text:#e5e7eb;
+    --section-bg:#fff;
+    --section-text:#020617;
+}
+
+/* RESET & BASE */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Arial, sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+/* NAVBAR */
+header{
+    background:var(--dark);
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+header h1{
+    color:var(--primary);
+    font-size:28px;
+}
+
+nav a{
+    color:var(--text);
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--primary);
+    border-bottom:2px solid var(--primary);
+    padding-bottom:5px;
+}
+
+/* HERO */
+.hero{
+    padding:80px 8%;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-banner.jpg') center/cover no-repeat;
+    color:#fff;
+    border-radius:12px;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+/* SECTION */
+.section{
+    background:var(--section-bg);
+    color:var(--section-text);
+    padding:80px 8%;
+    border-radius:12px;
+    margin:40px 8%;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:var(--primary);
+}
+
+/* GRID & CARD */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:var(--card);
+    color:var(--card-text);
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+    text-align:center;
+}
+
+.card img{
+    width:60px;
+    height:60px;
+    margin-bottom:15px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:var(--primary);
+    color:var(--dark);
+}
+
+/* LIST */
+ul{
+    list-style:none;
+    padding-left:0;
+    font-size:16px;
+}
+
+ul li{
+    margin-bottom:10px;
+}
+
+/* CONTACT SECTION */
+#contact p{
+    font-size:16px;
+    margin:5px 0;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:var(--dark);
+    color:var(--text);
+    margin-top:20px;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h2{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <h1>Digital Marketing</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#types">Types</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#tools">Tools</a>
+        <a href="#career">Career</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <h2>Digital Marketing Strategy Guide 🚀</h2>
+    <p>Visual guide with images for easy understanding of digital marketing, strategies, tools, and career opportunities.</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>What is Digital Marketing?</h2>
+    <p>Digital Marketing is promoting products/services using platforms like Google, social media, websites, and email. Helps businesses reach more audience and increase brand awareness efficiently.</p>
+</section>
+
+<!-- TYPES -->
+<section id="types" class="section">
+    <h2>Types of Digital Marketing</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="images/seo.png" alt="SEO Icon">
+            <h3>SEO</h3>
+            <p>Improve ranking on search engines.</p>
+        </div>
+        <div class="card">
+            <img src="images/social.png" alt="Social Media Icon">
+            <h3>Social Media</h3>
+            <p>Promote through Instagram, Facebook, LinkedIn.</p>
+        </div>
+        <div class="card">
+            <img src="images/content.png" alt="Content Icon">
+            <h3>Content Marketing</h3>
+            <p>Blogs, videos, and articles to engage audience.</p>
+        </div>
+        <div class="card">
+            <img src="images/email.png" alt="Email Icon">
+            <h3>Email Marketing</h3>
+            <p>Send offers, updates and newsletters.</p>
+        </div>
+        <!-- <div class="card">
+            <img src="images/ads.png" alt="PPC Ads Icon">
+            <h3>PPC Ads</h3>
+            <p>Paid advertising campaigns on Google & social media.</p>
+        </div> -->
+    </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="section">
+    <h2>Marketing Tools</h2>
+    <div class="grid">
+        <div class="card"><img src="images/analytics.png" alt="Analytics"><p>Google Analytics</p></div>
+        <div class="card"><img src="images/semrush.jpg" alt="SEMrush"><p>SEMrush</p></div>
+        <div class="card"><img src="images/ahrefs.png" alt="Ahrefs"><p>Ahrefs</p></div>
+        <div class="card"><img src="images/canva.png" alt="Canva"><p>Canva</p></div>
+        <div class="card"><img src="images/mailchimp.jpg" alt="Mailchimp"><p>Mailchimp</p></div>
+        <!-- <div class="card"><img src="images/hootsuite.png" alt="Hootsuite"><p>Hootsuite</p></div> -->
+    </div>
+</section>
+
+<!-- CAREER -->
+<section id="career" class="section">
+    <h2>Career Opportunities</h2>
+    <div class="grid">
+        <div class="card"><img src="images/seo-expert.png" alt="SEO Expert"><p>SEO Expert</p></div>
+        <div class="card"><img src="images/digital-marketer.png" alt="Digital Marketer"><p>Digital Marketer</p></div>
+        <div class="card"><img src="images/content-creator.png" alt="Content Creator"><p>Content Creator</p></div>
+        <div class="card"><img src="images/social-manager.png" alt="Social Media Manager"><p>Social Media Manager</p></div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: digital@email.com</p>
+    <p>Phone: +91 9876543210</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Digital Marketing Project | Visual Guide
+</footer>
+
+</body>
+</html>
